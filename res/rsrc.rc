@@ -1,0 +1,54 @@
+// template v.1.7 (resource)
+#include    "resource.h"
+#include    "rsrc.id"
+
+LANGUAGE    0, 0
+
+//icons
+IDI_ICON     ICON    DISCARDABLE     "res/icon.ico"
+
+//images/labels
+//IDC_IMG    BITMAP  DISCARDABLE     "res/image.bmp"
+
+//release data
+IDR_INF      RCDATA                  "res/info.txt"
+
+// gfx/sfx
+//IDR_RGN    RCDATA  DISCARDABLE     "res/image.rgn"
+//IDR_MUS    RCDATA                  "res/music.xm"
+
+IDD_DLG      DIALOGEX    6, 6, 365, 120
+STYLE   WS_VISIBLE | DS_CENTER | DS_SYSMODAL
+FONT    7, "Tahoma", 0, 0, 1
+BEGIN
+    // left, top, width, height
+	//CONTROL     IDC_IMG, 65335, STATIC, SS_BITMAP | SS_REALSIZEIMAGE, 0, 0, 272, 248
+
+	// labels
+	CONTROL     "Name:", IDS_NAME, STATIC, ES_READONLY, 9, 10, 80, 9
+    CONTROL     "Requested code:", IDS_RANDOM, STATIC, ES_READONLY, 9, 21, 80, 9 
+    CONTROL     "Registration:", IDS_SERIAL, STATIC, ES_READONLY, 9, 32, 80, 9
+	
+	// edit boxes
+	CONTROL     "", IDE_NAME, EDIT, ES_CENTER | ES_AUTOHSCROLL | WS_TABSTOP, 100, 10, 250, 9
+	CONTROL     "", IDE_RANDOM, EDIT, ES_CENTER | ES_AUTOHSCROLL | WS_TABSTOP | ES_UPPERCASE | ES_READONLY, 100, 21, 250, 9
+	CONTROL     "", IDE_SERIAL, EDIT, ES_CENTER | ES_AUTOHSCROLL | WS_TABSTOP, 100, 32, 250, 9
+
+	// buttons
+    CONTROL     "&Help", IDB_INF, BUTTON, BS_CENTER | BS_FLAT | WS_TABSTOP | BS_DEFPUSHBUTTON, 9, 60, 80, 9
+	CONTROL     "&Verify", IDB_GEN, BUTTON, BS_CENTER | BS_FLAT | WS_TABSTOP, 170, 60, 90, 9
+	CONTROL     "&Close", IDB_CLOSE, BUTTON, BS_CENTER | BS_FLAT | WS_TABSTOP, 262, 60, 90, 9
+	
+	// useless labels
+	CONTROL     "Asphyxia", 0, STATIC, ES_READONLY | WS_DISABLED, 9, 80, 50, 9
+	CONTROL     "Defeating Earth's Gravity", 1, STATIC, ES_READONLY | WS_DISABLED, 269, 80, 150, 9
+END
+
+// About box
+IDD_NFO     DIALOGEX    0, 0, 170, 190
+STYLE   DS_CENTER
+FONT    8, "Tahoma"
+BEGIN
+	CONTROL     "", IDE_INF, STATIC, ES_READONLY, 5, 5, 160, 150
+	CONTROL     "&Close", IDB_CLSNFO, BUTTON, WS_TABSTOP | BS_CENTER | BS_FLAT | BS_DEFPUSHBUTTON, 8, 145, 150, 9
+END

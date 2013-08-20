@@ -1,0 +1,25 @@
+#define     IDI_ICON  100
+
+#define     IDD_DLG   200
+#define     IDD_NFO   201
+
+#define     IDC_IMG   300
+#define     IDS_NAME  301
+#define     IDS_SERIAL  302
+#define     IDS_RANDOM  303
+
+#define     IDE_NAME    400
+#define     IDE_SERIAL  401
+#define     IDE_RANDOM  402
+#define     IDE_INF     403
+
+#define     IDB_GEN     410
+#define     IDB_CLOSE   411
+#define     IDB_INF     412
+#define     IDB_CLSNFO  413
+
+#define     IDR_INF   500
+#define     IDR_REL   501
+#define     IDR_RGN   502
+
+#define     IDR_MUS   600

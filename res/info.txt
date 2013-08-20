@@ -1,0 +1,14 @@
+ Asphyxia's Easy KM #2
+  - Nice to try your reversing skills
+  - You've to write a few lines of code
+  - No brute force needed
+  - Can be byte patched easily
+ 
+ Hellos to all FoFF members.
+ 
+ Respects to all the people that made
+ me love Crypto RE:
+ 
+ WiteG, blaCkeye, X3chun, Roy|Fleur and tE!;
+ and xtreeme, RET and kanal23 work.
+ 
